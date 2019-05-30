@@ -1,29 +1,8 @@
-const path = require('path');
-const url = require('url');
+const createWin = require('./functions/create_window');
 
-const {app, BrowserWindow} = require('electron');
+const {app} = require('electron');
 
-function createWindow() {
-    let win = new BrowserWindow ({
-        width: 700,
-        height: 700,
-        icon: __dirname + '/icons/icon.png'
-    });
-
-    win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
-        protocol: 'file:',
-        slashes: true
-    }));
-
-    win.webContents.openDevTools();
-
-    win.on('closed', () => {
-        win = null;
-    });
-}
-
-app.on('ready', createWindow);
+app.on('ready', createWin.createWindow);
 app.on('window-all-closed', () => {
     app.quit();
 });
