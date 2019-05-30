@@ -1,0 +1,23 @@
+{
+  "name": "bill-converter",
+  "version": "1.0.0",
+  "description": "Simple bill converter on electron.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzhas76064/bill-converter.git"
+  },
+  "author": "uzhas76064@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uzhas76064/bill-converter/issues"
+  },
+  "homepage": "https://github.com/uzhas76064/bill-converter#readme",
+  "dependencies": {
+    "electron": "^5.0.2",
+    "jshint": "^2.10.2"
+  }
+}
