@@ -4,7 +4,6 @@ const url = require('url');
 const {BrowserWindow} = require('electron');
 
 module.exports.createWindow = function() {
-    'use strict';
     let win = new BrowserWindow ({
         width: 700,
         height: 700,
@@ -12,7 +11,7 @@ module.exports.createWindow = function() {
     });
 
     win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+        pathname: path.join('../index.html'),
         protocol: 'file:',
         slashes: true
     }));

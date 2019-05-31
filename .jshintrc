@@ -10,7 +10,10 @@
 	"browser": true,
 	"devel": true,
 	"jquery": true,
-	"esversion": 9,
+	"esversion": 6,
 	"maxparams": 4,
-	"unused": "strict"
+	"unused": "strict",
+	"globals": {
+		"node": true
+	}
 }
