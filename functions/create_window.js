@@ -7,7 +7,7 @@ module.exports.createWindow = function() {
     let win = new BrowserWindow ({
         width: 700,
         height: 700,
-        icon: __dirname + '/icons/icon.png'
+        icon:  __dirname + '/icons/icon.png'
     });
 
     win.loadURL(url.format({
